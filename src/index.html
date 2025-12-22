@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FS LAUNCHER | Главная</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/titlebar.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div class="titlebar">
+        <div class="title-container">
+            <div class="data">
+                <p class="app-name">FS LAUNCHER <span class="app-version">0.1.0-beta</span></p>
+            </div>
+            <div class="controls">
+                <button class="app-min" title="Свернуть FS-LAUNCHER">
+                    <i class='bx bx-minus'></i>
+                </button>
+                <button class="app-close" title="Закрыть FS-LAUNCHER">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="app">
+        <section class="greet-sect">
+            <div class="greet">
+                <h1 class="title-greet">Добро пожаловать на FS PROJECT!</h1>
+                <h2 class="subtitle-greet">Чтобы начать играть, выберите сервер:</h1>
+            </div>
+            <div class="scroll-mark">
+                <i class='bx bx-mouse' title="Используйте колёсико мыши для пролистывания"></i>
+            </div>
+        </section>
+        <hr>
+        <section class="servers-sect">
+            <h1 class="servers-title">Доступные серверы</h1>
+            <p class="servers-warn">Оффлайн серверы не отображаются</p>
+            <div class="server-list">
+                <p class="wait-servers">Получение информации о серверах...</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="text-block">
+                <p class="copyright">&copy; 2025 lambda</p>
+                <p class="rights-warn">Лаунчер не является официальным и не пренадлежит FS PROJECT</p>
+            </div>
+            <div class="links-block">
+                <ul class="links-list">
+                    <li class="link">
+                        <a href="https://github.com/fslauncher" target="_blank" class="footer-link" title="GitHub">
+                            <i class='bx bxl-github'></i>
+                            Исходный код
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="https://t.me/sheplover" target="_blank" class="footer-link" title="Telegram">
+                            <i class='bx bxl-telegram'></i>
+                            Связь с автором
+                         </a>
+                    </li>
+                    <li class="link">
+                        <a href="https://fsproject.ru" target="_blank" class="footer-link" title="Сайт">
+                            <i class='bx bx-world'></i>
+                            Сайт FS PROJECT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/titlebar.js"></script>
+    <script src="assets/js/monitoring.js"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+</html>

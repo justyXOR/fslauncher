@@ -1,0 +1,49 @@
+div.titlebar {
+  width: 100vw;
+  height: 20px;
+  background-color: #2b2b2b;
+  app-region: drag;
+  display: flex;
+  flex-shrink: 0;
+  z-index: 1500;
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.titlebar .title-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.titlebar .title-container .app-name {
+  font-size: .9rem;
+  position: relative;
+  padding: 1.25px 0 0 3px;
+}
+
+.titlebar .title-container .app-name .app-version {
+  color: rgb(150, 150, 150);
+}
+
+.titlebar .title-container .controls {
+  position: relative;
+  margin-left: auto;
+  gap: 0px;
+  display: flex;
+}
+
+.titlebar .title-container .controls > * {
+  width: 20px;
+  appearance: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b2b;
+}
+
+.titlebar .title-container .controls > *:hover {
+  background-color: #363636;
+}

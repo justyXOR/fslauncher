@@ -1,0 +1,183 @@
+main.app {
+  flex: 1;
+  min-height: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  scrollbar-width: none;
+  background-color: #363636;
+  border-radius: 10px;
+}
+
+main.app::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.2rem;
+  max-width: 100vw;
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greet-sect {
+  justify-content: center;
+  background-image: url("/assets/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.greet {
+  z-index: 1;
+  text-shadow: black 0 0 30px;
+}
+
+.title-greet {
+  font-size: 3rem;
+}
+
+.subtitle-greet {
+  font-weight: 450;
+  font-size: 1.5rem;
+}
+
+.scroll-mark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  opacity: .3;
+  margin: .5rem;
+  z-index: 1499;
+}
+
+.servers-title {
+  font-size: 3rem;
+  position: relative;
+  top: 0;
+}
+
+.server-list {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  flex: 1;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 315px);
+  gap: 1rem;
+  justify-items: center;
+  justify-content: center;
+}
+
+.servers-warn {
+  color: #bbb;
+}
+
+.wait-servers {
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+  width: 100%;
+  color: #bbb;
+}
+
+.server {
+  width: 315px;
+  height: 300px;
+  background-color: #313131;
+  border-radius: 10px;
+  border: #ffffff3d solid 1px;
+}
+
+.server .server-img {
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.server .server-data {
+  margin: .6rem;
+}
+
+.server .server-data .server-title {
+  font-size: 1.1rem;
+}
+
+.server-icon, .server-map {
+  color: #c0c0c0;
+  font-size: .9rem;
+}
+
+
+/* online */
+.players-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.progress-container {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.online-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ff3dff, #59d3ff);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.online-players-text {
+  font-size: 0.85rem;
+  color: #aaa;
+  min-width: 60px;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* connect */
+.server-connect {
+  width: 100%;
+  appearance: none;
+  height: 25px;
+  border-radius: 4px;
+  background: none;
+  border: #2e7d99 solid 1px;
+  transition: background-color 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.server-connect::before {
+  content: "► ";
+}
+
+.server-connect:hover {
+  background-color: #2e7d99;
+}
