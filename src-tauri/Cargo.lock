@@ -956,7 +956,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "fslauncher-stable"
+name = "fslauncher"
 version = "0.1.0"
 dependencies = [
  "serde",
