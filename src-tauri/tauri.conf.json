@@ -17,7 +17,7 @@
         "shadow": false,
         "resizable": false,
         "transparent": true,
-        "devtools": true,
+        "devtools": false,
         "center": true
       }
     ],
