@@ -10,7 +10,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "FS Launcher | 0.1.1-beta nightly",
+        "title": "FS Launcher | 0.1.1 stable",
         "width": 1024,
         "height": 576,
         "decorations": false,
