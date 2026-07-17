@@ -2,4 +2,4 @@
 Simply unofficial launcher for FS PROJECT servers. Writed on Rust with framework Tauri v2
 
 **FS PROJECT official site:** [fsproject.ru](https://fsproject.ru)<br>
-**Connect with author (Telegram):** [@lambda_dev](https://t.me/lambda_dev)
+**Connect with author (Telegram):** [@trekzys_v2](https://t.me/trekzys_v2)
