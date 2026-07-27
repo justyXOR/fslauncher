@@ -15,4 +15,4 @@
 
 <hr>
 
-This project is distributed under the [AGPL-3.0](LICENSE.md) license.
+This project is distributed under the [AGPL-3.0](LICENSE) license.
