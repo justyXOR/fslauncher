@@ -1,3 +1,6 @@
 <Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/FSLauncherConsole/FSLauncherConsole.csproj" />
+  </Folder>
   <Project Path="FSLauncher/FSLauncher.csproj" />
 </Solution>
